@@ -1,0 +1,66 @@
+@import "variables.css";
+
+#container {
+  display: flex;
+  height: 100vh; /* 100% of the viewport height */
+  background-color: var(--background-color);
+
+}
+
+#camera-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-dark-1-color);
+  /*
+  display: flex;
+  justify-content: center;*/
+}
+
+#left-half {
+  background-color: var(--background-dark-1-color);
+  /*background-color: var(--primary-color);*/
+
+  display: grid;
+  grid-template-rows: 40vh 50vh 10vh;
+
+  flex: 1;
+}
+
+#right-half {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+  grid-template-rows: repeat(4, 1fr);   /* Four rows of equal height */
+  gap: 20px; /* Optional: adds space between grid items */
+  height: 100vh; /* Optional: makes the grid container span the full viewport height */
+  flex: 1;
+  padding: 20px;
+}
+
+#image-container {
+  flex: 3;
+  padding-top: 5px;
+  padding-bottom: 5px
+}
+
+#editor-container {
+  padding: 20px;
+
+}
+
+#hotspot-menu-container {
+  padding: 10px;
+
+}
+
+.sending-vsd-loading-screen {
+  height: 100vh;
+  color: var(--text-light-color);
+  /*text-align: center;*/
+  font-size: 2em;
+  background-color: var(--background-dark-1-color);
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+}
